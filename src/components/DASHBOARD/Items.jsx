@@ -1,4 +1,4 @@
-import React,{useContext, useState} from 'react'
+import React,{useContext, useEffect, useState} from 'react'
 import { CategoriesContext } from '../../context-api/Categories';
 import { ItemsContext } from '../../context-api/Items';
 import "./Items.css"
@@ -10,8 +10,11 @@ function Items() {
   const [user,setUser]=useContext(UserContext);
   const [items,setitems] = useContext(ItemsContext)
   const [totalItems,setTotalItems]=useState(items);
-
+  
   const [categories,setCategories] = useContext(CategoriesContext);
+  // useEffect(()=>{
+  //   setTotalItems(items);
+  // },[items])
   const handleFiltre = (e) => {
     const value = e.target.value;
     if(value == "all") {

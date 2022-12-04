@@ -1,4 +1,5 @@
-import React, {  useState } from 'react'
+import React, {  useContext, useState } from 'react'
+import { UserContext } from '../../context-api/User';
 import "./Dashboard.css"
 import Dashboard_body from './Dashboard_body';
 
@@ -7,7 +8,16 @@ function Dashboard() {
   const handleSetOption = (val)=> {
     setOption(val);
   }
-  
+  const [user,setUser]=useContext(UserContext);
+  const handleLogout = ()=>{
+    setUser({
+      isLogin : false,
+      info:{
+
+      }
+    })
+    
+  }
   return (
     <div className='dashboard'>
         <div className="dashboard_navbar">
@@ -17,7 +27,7 @@ function Dashboard() {
             <li className='dashboard_additem' onClick={()=>handleSetOption(2)}>Add Items</li>
             <li onClick={()=>handleSetOption(3)}>Items</li>
             <li onClick={()=>handleSetOption(4)}>Categories</li>
-            <li className='logout'>Logout</li>
+            <li className='logout' onClick={handleLogout}>Logout</li>
           </ul>
         </div>
         <Dashboard_body option={option}/>

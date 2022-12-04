@@ -20,14 +20,17 @@ function Dashboard_body({option}) {
           .then(res=>res.data.data)
           .then(res=>{
               // console.log(res);
+             let newItem=[]
               res.map(item=>{
-                setitems([...items,{
+                newItem.push({
                   id : item._id,
                   category : item.categoryname,
                   productName : item.itemname,
                   productPrice : parseInt(item.itemprice)
-                }])
+                });
               })
+
+              setitems(newItem);
           })
 
           fetchReqGET1(END_POINT2,user.info.token)
