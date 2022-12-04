@@ -29,7 +29,7 @@ function App() {
   // console.log(user);
   return (
     <div className="app">
-      <Router>
+      <Router basename={window.location.pathname || ''}>
         <Routes>
           <Route exact path="" element={<Goto_Dashboard user={user}/>}></Route>
           <Route exact path="/login" element={<Login/>}></Route>

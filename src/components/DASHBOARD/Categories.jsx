@@ -5,7 +5,7 @@ import "./Categories.css";
 import { UserContext } from '../../context-api/User';
 import { ItemsContext } from '../../context-api/Items';
 const END_POINT = "http://localhost:4000/product/addcategory";
-const END_POINT2="delete http://localhost:4000/product/removecategory/";
+const END_POINT2="http://localhost:4000/product/removecategory/";
 function Categories() {
   const [categories,setCategories]=useContext(CategoriesContext);
   const [items,setitems]=useContext(ItemsContext)
@@ -41,12 +41,12 @@ function Categories() {
         categories.map(c => {
           if(c.id == cate_id)cateName=c.categoryname;
         })
-        console.log(cateName);
+        console.log("CategoryName -> ",cateName);
         const newItem = items.filter(item => item.categoryname !== cateName);
         const newCat = categories.filter(category => category.id !== cate_id)
         setCategories(newCat);
         setitems(newItem);
-        // console.log(newItem);
+        console.log(newItem);
         console.log("Successfull Deleted the Item");
       })
     } catch (error) {
