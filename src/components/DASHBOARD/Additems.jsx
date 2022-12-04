@@ -53,7 +53,7 @@ function Additems() {
           }}>
             <option value="all"></option>
             {categories.map(category => (
-              <option value={category}>{category}</option>
+              <option value={category.categoryname}>{category.categoryname}</option>
             ))}
           </select>
         </div>
