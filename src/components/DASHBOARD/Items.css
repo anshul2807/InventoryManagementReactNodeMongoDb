@@ -1,0 +1,48 @@
+.items{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    justify-content: center;
+    width: 800px;
+    height: 400px;
+    margin: 10px auto;
+}
+.items-1{
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.items-1 label{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.items-1 select{
+    width: 200px;
+    height: 40px;
+}
+.items-2{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 400px;
+    overflow-y: auto;
+}
+.items-2 table{
+    width: 95%;
+    
+    margin: 10px;
+    
+    border-collapse: collapse;
+}
+.items-2 table tr{
+    height: 50px;
+}
+.items-2 table th{
+    border: 1px solid ;
+}
+.items-2 table td{
+    border: 1px solid ;
+    text-align: center;
+}
