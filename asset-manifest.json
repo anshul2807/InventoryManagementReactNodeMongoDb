@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/InventoryManagementReactNodeMongoDb/static/css/main.abce9755.css",
-    "main.js": "/InventoryManagementReactNodeMongoDb/static/js/main.b8abf462.js",
+    "main.js": "/InventoryManagementReactNodeMongoDb/static/js/main.4c1e36cf.js",
     "index.html": "/InventoryManagementReactNodeMongoDb/index.html",
     "main.abce9755.css.map": "/InventoryManagementReactNodeMongoDb/static/css/main.abce9755.css.map",
-    "main.b8abf462.js.map": "/InventoryManagementReactNodeMongoDb/static/js/main.b8abf462.js.map"
+    "main.4c1e36cf.js.map": "/InventoryManagementReactNodeMongoDb/static/js/main.4c1e36cf.js.map"
   },
   "entrypoints": [
     "static/css/main.abce9755.css",
-    "static/js/main.b8abf462.js"
+    "static/js/main.4c1e36cf.js"
   ]
 }
