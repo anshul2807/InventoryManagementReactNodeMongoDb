@@ -4,8 +4,8 @@ import {fetchReqPOST3,fetchReqDELETE1} from "../../clintside"
 import "./Categories.css";
 import { UserContext } from '../../context-api/User';
 import { ItemsContext } from '../../context-api/Items';
-const END_POINT = "http://localhost:4000/product/addcategory";
-const END_POINT2="http://localhost:4000/product/removecategory/";
+const END_POINT = "https://inventory-managment-system-705615852872.asia-south1.run.app/product/addcategory";
+const END_POINT2="https://inventory-managment-system-705615852872.asia-south1.run.app/product/removecategory/";
 function Categories() {
   const [categories,setCategories]=useContext(CategoriesContext);
   const [items,setitems]=useContext(ItemsContext)

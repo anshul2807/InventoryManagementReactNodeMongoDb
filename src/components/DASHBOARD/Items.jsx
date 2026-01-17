@@ -4,7 +4,7 @@ import { ItemsContext } from '../../context-api/Items';
 import "./Items.css"
 import {fetchReqDELETE1} from "../../clintside"
 import { UserContext } from '../../context-api/User';
-const END_POINT = "http://localhost:4000/product/removeitem/";
+const END_POINT = "https://inventory-managment-system-705615852872.asia-south1.run.app/product/removeitem/";
 
 function Items() {
   const [user,setUser]=useContext(UserContext);

@@ -3,7 +3,7 @@ import "./Login.css"
 import { Link } from 'react-router-dom'
 import { UserContext } from '../../context-api/User';
 import {fetchReqPOST1} from '../../clintside';
-const END_POINT = "http://localhost:4000/user/login/";
+const END_POINT = "https://inventory-managment-system-705615852872.asia-south1.run.app/user/login/";
 function Login() {
     const [user,setUser] = useContext(UserContext);
     const [userName,setUserName]=useState('');

@@ -5,7 +5,7 @@ import "./Additems.css"
 import { UserContext } from '../../context-api/User';
 import {fetchReqPOST3} from "../../clintside"
 
-const END_POINT = "http://localhost:4000/product/additems";
+const END_POINT = "https://inventory-managment-system-705615852872.asia-south1.run.app/product/additems";
 
 function Additems() {
   const [user,setUser] = useContext(UserContext);

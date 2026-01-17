@@ -3,7 +3,7 @@ import { UserContext } from '../../context-api/User';
 import "./Profile.css"
 import {fetchReqPUT1} from "../../clintside"
 
-const END_POINT = "http://localhost:4000/user/update";
+const END_POINT = "https://inventory-managment-system-705615852872.asia-south1.run.app/user/update";
 
 function Profile() {
   const [user,setUser] = useContext(UserContext);

@@ -7,8 +7,8 @@ import { fetchReqGET1 } from '../../clintside';
 import { ItemsContext } from '../../context-api/Items';
 import { CategoriesContext } from '../../context-api/Categories';
 import { UserContext } from '../../context-api/User';
-const END_POINT1="http://localhost:4000/product/items";
-const END_POINT2="http://localhost:4000/product/category";
+const END_POINT1="https://inventory-managment-system-705615852872.asia-south1.run.app/product/items";
+const END_POINT2="https://inventory-managment-system-705615852872.asia-south1.run.app/product/category";
 
 function Dashboard_body({option}) {
   const [user,setUser]=useContext(UserContext);
