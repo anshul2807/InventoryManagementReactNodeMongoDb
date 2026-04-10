@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
 import "./Register.css"
 import { fetchReqPOST1 } from '../../clintside';
-const END_POINT = "https://inventory-managment-system-705615852872.asia-south1.run.app/user/register/";
+const END_POINT = "https://inventory-server-node-203412458873.us-central1.run.app/user/register/";
 
 
 function Register() {
